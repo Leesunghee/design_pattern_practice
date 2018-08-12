@@ -1,4 +1,4 @@
-package com.ready2die.templeteMethod;
+package com.ready2die.templeteMethod.dp;
 
 public abstract class AbstGameConnectHelper {
 
@@ -26,6 +26,8 @@ public abstract class AbstGameConnectHelper {
         int i = authorizatin(userName);
 
         switch (i) {
+            case -1:
+                throw new Error("셧다운");
             case 0: //게임 매니저
                 break;
             case 1: //유료 회원
