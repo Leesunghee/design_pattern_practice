@@ -2,7 +2,12 @@ package com.ready2die.builder2_practice;
 
 public class ComputerBuilder {
 
-    private Computer computer = new Computer("default", "default", "default");
+    private Computer computer;
+
+    private ComputerBuilder() {
+        computer = new Computer("default", "default", "default");
+    }
+
     public static ComputerBuilder start() {
         return new ComputerBuilder();
     }

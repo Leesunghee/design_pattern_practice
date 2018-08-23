@@ -1,4 +1,4 @@
-package com.ready2die.bulider;
+package com.ready2die.builder2;
 
 public class Computer {
 
@@ -6,6 +6,12 @@ public class Computer {
     private String ram;
     private String storage;
 
+    /**
+     *
+     * @param cpu
+     * @param ram
+     * @param storage
+     */
     public Computer(String cpu, String ram, String storage) {
         this.cpu = cpu;
         this.ram = ram;
@@ -42,6 +48,6 @@ public class Computer {
                 "cpu='" + cpu + '\'' +
                 ", ram='" + ram + '\'' +
                 ", storage='" + storage + '\'' +
-                '}';
+               '}';
     }
 }
