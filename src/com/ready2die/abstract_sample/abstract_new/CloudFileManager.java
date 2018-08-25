@@ -7,10 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
-
-    }
+public class CloudFileManager {
 
     public List<CloudFile> getFileInfos(CloudId cloudId) {
         CloudFileSystem fileSystem = CloudFileSystemFactory.getFileSystem(cloudId);
@@ -25,4 +22,8 @@ public class Main {
         CloudFileSystem fileSystem = CloudFileSystemFactory.getFileSystem(target);
 //        fileSystem.copyfrom(file);
     }
+
+    //이것이 바로 OCP(Open-Closed Principle)
+    //Open for Extension 확장에 열려 있음
+    //Closed for Modification 수정엔 닫혀 있음
 }

@@ -1,4 +1,6 @@
-package com.ready2die.abstract_sample.abstract_new;
+package com.ready2die.abstract_sample.abstract_new.concrete;
+
+import com.ready2die.abstract_sample.abstract_new.CloudFile;
 
 import java.io.InputStream;
 import java.io.OutputStream;
