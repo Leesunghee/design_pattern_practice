@@ -1,6 +1,5 @@
 package com.ready2die.observer_with_java_native2;
 
-import java.util.Observer;
 import java.util.Vector;
 
 public class Observable<T> {

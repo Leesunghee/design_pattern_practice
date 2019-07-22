@@ -3,7 +3,7 @@ package com.ready2die.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewsAgency implements Publisher {
+public class NewsAgency implements Publisher<Channel> {
 
     private String news;
     private List<Channel> channelList = new ArrayList<>();

@@ -1,9 +1,9 @@
 package com.ready2die.observer;
 
-public interface Publisher {
-    void addObserver(Channel channel);
+public interface Publisher<T> {
+    void addObserver(T t);
 
-    void removeObserver(Channel channel);
+    void removeObserver(T t);
 
     void notifyObserver();
 }
